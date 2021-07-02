@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Courgette&family=IBM+Plex+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Courgette&family=IBM+Plex+Mono:wght@500&family=Slabo+13px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+
+body{
+    margin: auto;
+    padding: 0;
+    max-width: 1500px;
+}
+
+.header{
+    background: #9EEBE2;
+    height: 90px;
+    padding-top: 8px;
+    font-family:'Courgette', cursive;
+    font-size: 25px;
+}
+
+.footer{
+    background: #9EEBE2;
+    height: 75px;
+    padding-top: 17px;
+    font-family: 'Fenix', serif;
+    font-size: 20px;
+}
+
+.header p, .footer p {
+    text-align: center;
+}
+
+.navigationBar{
+    display: flex;
+    background: #1FD8D8;
+    text-align: center;
+    height: 65px;
+    padding-right: 55px;
+}
+
+.navigationBar li{
+    display: inline-block;
+}
+
+.navigationBar ul li a{
+    text-decoration: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    font-size: 23px;
+    padding-right:10px;
+    padding-left: 10px;
+}
+
+.navigationBar ul li{
+    width: 150px;
+    height: 43px;
+    border: none;
+    transition: ease-out 1.5s;
+    border: 2px solid #B7DF69;
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navigationBar ul li :hover{
+    cursor: pointer;
+}
+
+.navigationBar ul li :before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: 40%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background: #B7DF69;
+}
+
+.navigationBar ul li :hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.navigationBar ul{
+    margin: auto;
+}
+
+#aboutMe{
+    display: flex;
+}
+
+#aboutMe, #informations{
+    background: #E0FFFF	;
+}
+
+.slikaTablo img{
+    position: absolute;
+    height: 340px;
+    width: 235px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.AboutMeText p{
+    padding-left: 480px;
+    width: 800px;
+    float:right;
+    text-align: justify;
+    margin-top: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 21.5px;
+}
+
+#informations{
+    display: flex;
+}
+
+.slika{
+    width: 50px;
+    height: 50px;
+}
+
+#informations{
+    padding-left: 150px;
+}
+
+.informationsVtoraKolona{
+    padding-left: 170px;
+}
+
+.informationsTretaKolona{
+    padding-left: 250px;
+}
+
+.data{
+    padding-bottom: 10px;
+}
+
+.slikaData{
+    height: 50px;
+    width: 50px;
+    margin-bottom: -20px;
+}
+
+.slikaLokacija{
+    margin-bottom: -12px;
+}
+
+.informationsPrvaKolona .data p{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.informationsPrvaKolona .lokacija p{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.informationsPrvaKolona .lokacija{
+    margin-left: 10px;
+}
+.slikaLokacija{
+    height: 40px;
+    width: 30px;
+
+}
+
+.slikaYahoo{
+    height: 40px;
+    width: 40px;
+    margin-left: -8px;
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
+
+.slikaOutlook{
+    height: 40px;
+    width: 40px;
+    margin-left: -10px;
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
+
+.yahoo{
+    padding-bottom: 70px;
+}
+
+.yahoo a, .outlook a{
+    text-decoration: none;
+    color: black;
+}
+
+.slikaFacebook{
+    height: 40px;
+    width: 40px;
+    margin-left: -50px;
+    margin-bottom: -51px;
+    margin-right: 35px;
+}
+
+.slikaInstagram{
+    height: 50px;
+    width: 90px;
+    margin-left: -75px;
+    margin-bottom: -53px;
+    margin-right: 35px;
+}
+
+.informationsTretaKolona{
+    margin-top: -27px;
+}
+
+.facebook{
+    padding-bottom: 32px;
+}
+
+#informations{
+    padding-bottom: 40px;
+}
+
+.schools{
+    background: #E0FFFF	;
+    display: flex;
+    padding-left: 120px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 21.5px;
+    text-align: justify;
+}
+#prvParagraf, #vtorParagraf{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#vtorParagraf{
+    padding-top: 25px;
+}
+
+.osnovnoSkolo{
+    height: 250px;
+    width: 450px;
+    padding-bottom: 40px;
+}
+
+#prvParagraf p:first-of-type{
+    width: 650px;
+    padding-bottom: 40px;
+}
+
+.srednoSkolo{
+    height: 280px;
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#vtorParagraf p{
+    width: 650px;
+    margin-left: -200px;
+    margin-top: 27px;
+    padding-bottom: 40px;
+}
+
+.fakultet{
+    height: 220px;
+    width: 450px;
+    padding-bottom: 40px;
+}
+
+#prvParagraf p:nth-of-type(2){
+    width: 650px;
+}
+
+.Sports{
+    background: #E0FFFF	;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 21.5px;
+    text-align: justify;
+    margin-top: -21px;
+}
+
+#RakometIParagraf  p{
+    padding-top: 25px;
+}
+
+#RakometIIParagraf{
+    display: flex;
+}
+
+#RakometIIParagraf p{
+    padding-left: 40px;
+    margin-top: -4px;
+    width: 722px;
+}
+
+#RakometIIParagraf img{
+    height: 250px;
+    width: 400px;
+}
+
+#RakometIIIParagraf{
+    display: flex;
+    margin-top: -18px;
+}
+
+#RakometIIIParagraf p{
+    width: 722px;
+    padding-right: 40px;
+}
+
+#RakometIIIParagraf video{
+    padding-top: 10px;
+}
+
+#RakometIVParagraf{
+    display: flex;
+    padding-bottom: 40px;
+    margin-top: -18px;
+}
+
+#RakometIVParagraf img:nth-child(1){
+    height: 248px;
+    width: 300px;
+    padding-top: 26px;
+}
+
+#RakometIVParagraf img:nth-of-type(2){
+    height: 248px;
+    width: 300px;
+    padding-top: 28px;
+}
+
+.Border{
+    background:  #B7DF69;
+    width: 10px;
+    height: 250px;
+    display: block;
+    margin-top: 28px;
+}
+
+#RakometIVParagraf p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FreeTimeSports{
+    margin-bottom: -23px;
+    padding-bottom: 30px;
+}
+
+#kontakt{
+    background: #E0FFFF	;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    font-size: 21.5px;
+    text-align: justify;
+    margin-top: -21px;
+    padding-bottom: 40px;
+}
+
+#kontaktIDel{
+    text-align: center;
+}
+
+#kontaktIDel p{
+    padding-top: 30px;
+}
+
+#kontaktIIDel{
+    text-align: center;
+}
+
+#kontaktIIDel a{
+    text-decoration: none;
+    color: #1FD8D8;
+}
+
+form{
+    background-color: #B7DF69;
+    text-align: left;
+    margin-right: -5px;
+}
+
+.information{
+    padding-bottom: 5px;
+}
+
+.pole{
+    margin-left: 31px;
+    display: inline-block;
+    width: 45%;
+}
+
+.data1{
+    float:left;
+}
+
+
+.pole input{
+    width: 100%;
+    height: 30px;
+}
+
+.pole p{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.pole textarea{
+    height: 145px;
+    width: 140%;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.pole select{
+    width: 102%;
+    height: 33.96px;
+    display: inline-block;
+}
+
+.subject{
+    margin-left: -335px;
+}
+
+.Submit{
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 29%;
+    background-color: #1FD8D8;
+    color: white;
+}
+
+.Submit:hover{
+    transform: scale(1.05);
+    background: #9EEBE2;
+    cursor: pointer;
+}
+
+.kontaktForma{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
